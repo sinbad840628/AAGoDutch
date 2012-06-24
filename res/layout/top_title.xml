@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No.4 新增 九宫格布局界面的Title  background 追加-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="37dp" 
+    android:background="@drawable/bg_title"
+    >
+
+    <!-- No.5  textColor和 paddingLeft 追加-->
+    <TextView 
+        android:id="@+id/tvTopTitle"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ActivityMainTitle"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/black"
+        />
+    
+    <ImageView android:id="@+id/ivAppBack"
+		 android:src="@drawable/app_back"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:layout_alignParentRight="true"
+		 android:paddingRight="5px"
+		 android:layout_centerVertical="true"
+		 />
+</RelativeLayout>

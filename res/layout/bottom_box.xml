@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No.5 新建RelateiveLayout 底文件 -->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="68dp"
+  android:layout_alignParentBottom="true"
+  >
+  <RelativeLayout
+  android:id="@+id/layBottomBar"
+  android:layout_width="fill_parent"
+  android:layout_height="68dp"
+  android:background="@drawable/bottom_bg"
+  >
+  <ImageView 
+  android:id="@+id/ivBottomIcon"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:src="@drawable/icon_big"
+  android:layout_marginLeft="5dp"
+  android:layout_centerVertical="true"
+   />
+  <TextView 
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="@string/WelcomeInfo"
+  android:layout_toRightOf="@id/ivBottomIcon"
+  android:textColor="@color/white"
+  android:padding="4dp"
+  android:layout_centerVertical="true"
+   />
+  <ImageView 
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:src="@drawable/main_btn"
+  android:layout_alignParentRight="true"
+  android:layout_marginRight="20dp"
+  android:layout_centerVertical="true"
+   />
+  </RelativeLayout>
+  
+  <!-- No.12 SlideMenu 配置,追加滑动菜单 -->
+  <LinearLayout
+  android:id="@+id/layBottomListViewBox"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@id/layBottomBar"
+  >
+  <!-- No.12 调用 滑动菜单的式样配置 -->
+  <ListView android:id="@+id/lvSlideList"
+  style="@style/StyleListView"
+   />
+  </LinearLayout>
+</RelativeLayout>

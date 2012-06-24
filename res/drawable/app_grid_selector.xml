@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- No.11 设定圆角和渐变色的设置 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="true">
+	<shape>
+	<corners android:radius="5dp" />
+	<gradient android:startColor="#ffabb8c9" android:endColor="#ff6f84a3"
+	angle="270" />	
+	</shape>
+</item>
+</selector>
